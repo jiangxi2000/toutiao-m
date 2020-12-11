@@ -148,30 +148,27 @@ export default {
 }
 </script>
 
-<style lang="less">
-
-.login-container{
-  .van-cell div i{
-     vertical-align: middle;
-  }
-  .send-btn{
-    width: 76px;
-    height: 23px;
-    background-color: #ededed;
-    .van-button__content{
-      font-size: 11px;
-      color: #666666;
+<style scoped lang="less">
+  .login-container{
+    /deep/ .van-field__left-icon i{vertical-align: middle;font-size: 20px;}
+    .send-btn{
+      width: 76px;
+      height: 23px;
+      background-color: #ededed;
+      .van-button__content{
+        font-size: 11px;
+        color: #666666;
+      }
     }
-  }
-  .login-btn-wrap{
-    padding: 26px 16px;
-    .login-btn{
-      background-color: #6db4fb;
-      border: none;
-      .van-button__text{
-        font-size: 15px;
+    .login-btn-wrap{
+      padding: 26px 16px;
+      .login-btn{
+        background-color: #6db4fb;
+        border: none;
+        .van-button__text{
+          font-size: 15px;
+        }
       }
     }
   }
-}
 </style>
