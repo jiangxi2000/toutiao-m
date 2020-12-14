@@ -106,6 +106,7 @@ export default {
           position: 'top'
         })
         this.$store.commit('setUser', data.data)
+        this.$router.back()
       } catch (err) {
         this.$toast.fail('登录失败')
         console.log(err)
